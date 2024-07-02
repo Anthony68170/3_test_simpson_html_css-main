@@ -1,5 +1,5 @@
 
-
+/* GENERAL */
 * {
     margin: 0;
     padding: 0;
@@ -44,8 +44,8 @@ h2 {
 figure {
     width: 100%;
 }
-
-.simpsonsHero{
+/* HEADER */
+.simpsonsHero{ 
     width: 100%;
     border-bottom: 2px solid white;
 }
@@ -79,7 +79,7 @@ nav>ul>li>a{
     /*max-width: fit-content;*/
    
 }
-
+/* article */
 main {
     background-color: white;
     width: 100%;
@@ -150,7 +150,6 @@ aside{
     padding: 1%;
     display: flex; flex-direction: column; justify-content: flex-end;
     height: 100%;
- 
 
 }
 
@@ -190,62 +189,52 @@ footer{
 }
 
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 640px) { /* Ici on appelle une fonction permettant de contredire le code de base, dans le but que le code puisse s'adapter aux différents types d'écran de l'utilisateur */
 
-   
-    #container {
-      
-        width: 100%;
-
-        
+    #container { /* Ici on appelle l'un des parents pour contrôler sa forme lors de la modification de la taille de l'écran par l'utilisateur */ 
+        width: 100%; /* Ici on fixe la largeur à 100% de ce container intégrant le header. Il prend donc la totalité de la largeur de son conteneur (parent) */
     }
 
-
-    nav {
-        width: 100%;
-
+    nav { /* Ici on appelleune barre de navigation comme fonction pour faire apparaître un menu pour l'utilisateur */
+        width: 100%; /* Ici on fixe la largeur du block "nav" contenant le menu, à 100% */
     }
 
-    ul {
+    ul { /* Ici on appelle / intègre une liste pour l'utilisateur */
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
     }
 
-    a { 
-        
-        text-align: center;
-    
+/* li => Ici on fixe un lien à la liste "ul" */
+
+    a { /* li => Ici on fixe les règles du texte */
+        text-align: center; /* on demande au texte d'être centré par rappoprt à son contenu */
     }
 
-   
-
-    main {
-        width: 100%;
- 
-    }
-    h1{
-        padding:16px;
+    main { /* li => Ici on appelle le container nommé "main"; parent direct de "h1 => Titre" et de "main-content" => Article et les 3 Figures*/
+        width: 100%; /* Ici, on fixe la largeur de "main" à 100%; correspondant à la largeur totale de son parent (container => enfant direct du body) */
     }
 
-    .main-content {
-        width: 100%;
-        background-color: white;
-        flex-direction: column;
-   
-     
+    h1{ /* Ici, on appelle l'élément h1 pour contredire une règle du script principal */
+        padding:16px; /* Ici, on place un rembourrage intérieur dans l'élément h1 */
+    }
+
+    .main-content { /* ici, on appelle le block nommé "main-content", enfant direct de "main" */
+        width: 100%; /* On décide de modifier sa largeur totale donc 100% */
+        background-color: white; /* Ici, on décide de fixer la couleur de fond de "main-content" en blanc */
+        flex-direction: column; /* Ici, on décide de placer l'élément en colonne */
     }
     
-    article{
-        width: 100%;
+    article{ /* Ici, on appelle l'élément "article" */
+        width: 100%; /* Ici, on fixe sa largeur à 100% */
     }
 
-    article>p{
-        width: 100%;
-        text-align: justify;
+    article>p{ /* Ici, on appelle le texte de l'article */
+        width: 100%; /* Ici, on fixe sa largeur à 100% */
+        text-align: justify; /* Ici, on demande d'aligner le texte en position "justifié" */
     }
 
-    aside {
+    aside { /* Ici, on appelle l'élément "aside" */
         width: 100%;
     }
   }
