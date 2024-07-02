@@ -1,0 +1,252 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body {
+    background-color: rgba(255, 217, 0, 0.993);
+
+}
+
+p{
+    color: black;
+    
+}
+
+#container {
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    display: flex; 
+    flex-direction: column;
+    /*flex-wrap: wrap; */
+}
+
+header {
+    background-color: rgb(106, 177, 235);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    background-color:rgb(106, 177, 235);
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+figure {
+    width: 100%;
+}
+
+.simpsonsHero{
+    width: 100%;
+    border-bottom: 2px solid white;
+}
+
+nav{
+    background-color: rgb(106, 177, 235); 
+    color: white; 
+    text-align: center;
+    width: 100%; 
+    padding: 1%;
+    display: flex;
+    height: auto;
+    justify-content: space-around;
+}
+
+ul {
+    list-style-type: none;
+    max-width: 100%;
+    justify-content: space-around; 
+    text-align: center;
+    display: flex; 
+   
+  } 
+  
+
+nav>ul>li>a{ 
+    display: block;
+    padding: 1em;
+    color:white;
+    text-align: center;
+    /*max-width: fit-content;*/
+   
+}
+
+main {
+    background-color: white;
+    width: 100%;
+    /*align-items: flex-end;*/
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main-content {
+    width: 100%;
+    background-color: white;
+    display: flex; 
+    /*flex-direction: column;*/
+ 
+}
+
+article {
+    background-color: white;
+    width: 70%;
+    padding: 1em;
+}
+
+h1{ 
+    color: rgba(212, 193, 21, 0.842);
+    padding: 1%;
+    text-align: left;
+    
+}
+
+ article>p{
+    color: black;
+    padding: 1%;
+    text-align: justify;
+    width: 100%;
+ }
+
+ .figure-main{
+    object-fit: contain;
+    display: flex; flex-direction: column;
+    height: 50%;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-direction: row;
+ }
+
+.simpsonsImg1{
+    width: 33%;
+    border: 1px solid; color: black;
+}
+
+.simpsonsImg2{
+    width: 33%;
+    padding: 1%;
+    border: 1px solid; color: black;
+}
+
+.simpsonsImg3{
+    width: 33%;
+    padding: 1%;
+    border: 1px solid; color: black;
+}
+
+aside{
+    width: 30%;
+    background-color:  rgb(106, 177, 235);
+    text-align: center;
+    padding: 1%;
+    display: flex; flex-direction: column; justify-content: flex-end;
+    height: 100%;
+ 
+
+}
+
+.simpsonsImg4{
+    width:100%;
+    text-align: center;
+    padding: 1%; color: white;
+}
+
+h3{
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+}
+
+span{
+    color: white;
+    font-weight: 500;
+    font-style: italic;
+    padding: 2em;
+}
+
+p{
+    color: white;
+    font-weight: 100;
+    text-align: justify;
+}
+
+footer{
+    background-color: rgb(26, 29, 228);
+    color: white;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+    padding: 1%;
+    flex-direction: column;
+}
+
+
+@media screen and (max-width: 640px) {
+
+   
+
+    #container {
+      
+        width: 100%;
+
+        
+    }
+
+
+    nav {
+        width: 100%;
+
+    }
+
+    ul {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    a { 
+        
+        text-align: center;
+    
+    }
+
+   
+
+    main {
+        width: 100%;
+ 
+    }
+    h1{
+        padding:16px;
+    }
+
+    .main-content {
+        width: 100%;
+        background-color: white;
+        flex-direction: column;
+   
+     
+    }
+    
+    article{
+        width: 100%;
+    }
+
+    article>p{
+        width: 100%;
+        text-align: justify;
+    }
+
+    aside {
+        width: 100%;
+    }
+  }
